@@ -57,6 +57,7 @@ class Forms extends Component {
   }
   onSubmit(event) {
     event.preventDefault();
+    event.target.reset();
     this.setState({
       isClicked: true,
       riskData: this.dict
@@ -100,7 +101,7 @@ class Forms extends Component {
               { className: "" },
               React.createElement(
                 "form",
-                { onSubmit: this.onSubmit },
+                { onSubmit: this.onSubmit,  },
                 riskList.map((data, key) =>
                   React.createElement(
                     "div",
