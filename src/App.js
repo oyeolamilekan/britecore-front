@@ -98,7 +98,7 @@ class Forms extends Component {
         {chosen
           ? React.createElement(
               "div",
-              { className: "" },
+              { className: "generated-form" },
               React.createElement(
                 "form",
                 { onSubmit: this.onSubmit,  },
